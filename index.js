@@ -1,9 +1,11 @@
 const express = require("express");
 const { createTodo, updateTodo } = require("./types"); // Ensure these are correctly defined
 const { todo } = require("./db"); // Ensure this has the correct methods for DB interaction
+const cors = require("cors");
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.post("/todo", async function (req, res) {
     const createPayload = req.body;

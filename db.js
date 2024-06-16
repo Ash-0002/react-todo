@@ -8,7 +8,7 @@ todo {
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://admin:admin@cluster0.abeguul.mongodb.net/");
+mongoose.connect("mongodb+srv://admin:admin@cluster0.abeguul.mongodb.net/ReactTodo");
 
 const todoSchema = mongoose.Schema({
     title: String,
